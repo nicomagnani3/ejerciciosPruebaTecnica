@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  app: 
+      build: 
+        context: app
+        dockerfile: app\Dockerfile
+      volumes:
+          - ./:/app
+      working_dir: /app
+     
+      
+  webserver:
+      image: nginx:latest
+      ports:
+          - 8000:80
+      volumes:
+            - ./nginx/conf.d/:/etc/nginx/conf.d/       
+  db:
+     image: mysql:5.7
+     environment:
+        - MYSQL_ROOT_PASSWORD=admin
+        - MYSQL_database=db
+     volumes:
+            - symfony-data:/var/lib/mysql    
+            - php_socket:/var/run/php
+            - caddy_data:/data
+            - caddy_config:/config  
+            - ./simtp_api:/app/simtp_api:ro
+            - ./simtp:/app/simtp:ro
+     
+
+volumes:
+    symfony-data:
+    php_socket:
+    caddy_data:
+    caddy_config:
+    db_data:
+
+  

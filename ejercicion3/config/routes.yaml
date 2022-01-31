@@ -1,0 +1,7 @@
+api_countries_get_item:
+    path: 'api/countries/ejemplo'
+    methods:  ['GET']
+    defaults:
+        _controller: '\App\Controller\CountriesSpecial::special'
+        _api_resource_class: 'App\Entity\Countries'
+        _api_item_operation_name: 'special'
