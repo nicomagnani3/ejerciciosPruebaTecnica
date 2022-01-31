@@ -1,0 +1,22 @@
+<?php //App%255CController%255CBiciController%2523get_list_bicicleta
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/get_listado_bicis',
+            ],
+            'name' => [
+                'listado_bicicletas',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

@@ -1,0 +1,3 @@
+<?php //App%255CEntity%255CBiciElectrica%2523calcularPrecioAlquiler
+
+return [PHP_INT_MAX, []];

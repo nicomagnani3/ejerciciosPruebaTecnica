@@ -1,0 +1,33 @@
+<?php //App%255CEntity%255CBici
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\InheritanceType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\InheritanceType')),
+        clone ($p['Symfony\\Component\\Serializer\\Annotation\\DiscriminatorMap'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\DiscriminatorMap')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'value' => [
+                'JOINED',
+            ],
+        ],
+        'Symfony\\Component\\Serializer\\Annotation\\DiscriminatorMap' => [
+            'typeProperty' => [
+                1 => 'objectType',
+            ],
+            'mapping' => [
+                1 => [
+                    'bici_normal' => 'BiciNormal',
+                    'bici_antigua' => 'BiciAntigua',
+                    'bici_electrica' => 'BiciElectrica',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];
