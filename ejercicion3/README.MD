@@ -1,7 +1,7 @@
  
  1) 
- Correr script schema.sql que contiene los script necesarios para poder crear la base de datos
- ejercicio3 con sus tablas correspondientes
+ crear base de datos mysql con nombre  ejercicio3
+ Correr script ubicado en db/schema.sql que contiene los script necesarios para poder crear las tablas necesarias
 
  2) 
  modificar el .env
@@ -11,7 +11,7 @@
  DATABASE_URL="mysql://root:nicolas123.@localhost/ejercicio3"
 
 3) 
- Para levanar el proyecto es necesario tener composer
+ Para levanar el proyecto es necesario tener composer y PHP 7.4 => 
  en la raiz del proyecto pararse en ejercicion3
  cd ejercicion3
  levantar el proyecto php -S 127.0.0.1:8000 -t public
@@ -47,7 +47,7 @@ Parametros JSON
   "hasta": "2022-01-30T22:25:48.432Z",
   "esBase": true,
   "bicicleta": {
-    "type":"bici_antigua"  
+    "type":"bici_electrica"  
   },
   "cliente":1
 }
